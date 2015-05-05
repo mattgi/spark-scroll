@@ -97,6 +97,10 @@
       return this.actor = new Actor(this.tl, this.context);
     };
 
+    GSAPAnimator.prototype.removeActor = function(options) {
+      return this.actor = undefined;
+    };
+
     GSAPAnimator.prototype.update = function(pos) {
       if (pos >= 0) {
         this.tl.seek(pos, false);
